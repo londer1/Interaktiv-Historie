@@ -1,0 +1,21 @@
+.container {
+    max-width: 800px; /* Adjust the value as needed */
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden; /* Prevents text overflow */
+    word-wrap: break-word; /* Breaks long words to fit within container */
+}
+
+#story-box {
+    margin-bottom: 20px;
+    overflow: hidden; /* Prevents text overflow */
+}
+
+#story-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+#options button {
+    margin-right: 10px;
+}
