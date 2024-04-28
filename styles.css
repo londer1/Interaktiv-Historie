@@ -13,6 +13,9 @@ body {
     background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background color */
     border-radius: 10px;
     margin-bottom: 20px;
+    display: flex; /* Make the story box a flex container */
+    justify-content: center; /* Center the images horizontally */
+    flex-wrap: wrap; /* Allow the images to wrap onto the next line if there's not enough space */
 }
 
 /* Apply styles to the story text */
@@ -48,9 +51,10 @@ body {
 }
 
 /* Apply styles to images */
+/* Apply styles to images */
 .scene-image {
-    display: block;
-    margin: 0 auto; /* Center images horizontally */
-    max-width: 100%; /* Ensure images don't exceed the width of their container */
-    margin-bottom: 20px; /* Add some space between images */
+    flex: 1; /* Ensure images take up equal space */
+    max-width: 45%; /* Adjust the width of each image */
+    margin: 0 2.5%; /* Add space between images */
+    vertical-align: top; /* Align images at the top */
 }
