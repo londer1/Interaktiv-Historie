@@ -57,4 +57,5 @@ body {
     max-width: 45%; /* Adjust the width of each image */
     margin: 0 2.5%; /* Add space between images */
     vertical-align: top; /* Align images at the top */
+    border-radius: 4%;
 }
