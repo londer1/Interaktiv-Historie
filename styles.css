@@ -1,0 +1,56 @@
+/* Apply styles to the body to set the background color */
+body {
+    background-color: #0a3d91; /* Dark blue background color */
+    color: #fff; /* White text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the story box */
+.story-box {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background color */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Apply styles to the story text */
+.scene-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Apply styles to the options box */
+.options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Apply styles to the option buttons */
+.options button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #66b3ff; /* Light blue background color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+/* Style the button on hover */
+.options button:hover {
+    background-color: #3385ff; /* Darker shade of blue on hover */
+}
+
+/* Apply styles to images */
+.scene-image {
+    display: block;
+    margin: 0 auto; /* Center images horizontally */
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    margin-bottom: 20px; /* Add some space between images */
+}

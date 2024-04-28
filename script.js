@@ -15,39 +15,46 @@ const story = [
 let storyIndex = 0;
 
 function displayStory() {
-    let storyContent = "";
+    const currentScene = story[storyIndex];
 
-    for (let i = 0; i <= storyIndex; i++) {
-        storyContent += '<div class="scene">';
-        if (Array.isArray(story[i].image)) {
-            story[i].image.forEach(img => {
+    let storyContent = '';
+    if (currentScene.image) {
+        if (Array.isArray(currentScene.image)) {
+            currentScene.image.forEach(img => {
                 storyContent += `<img src="${img}" alt="Scene Image" class="scene-image">`;
             });
-        } else if (typeof story[i].image === 'string' && story[i].image !== "") {
-            storyContent += `<img src="${story[i].image}" alt="Scene Image" class="scene-image">`;
+        } else {
+            storyContent += `<img src="${currentScene.image}" alt="Scene Image" class="scene-image">`;
         }
-        storyContent += `<p class="scene-text">${story[i].text}</p></div>`;
     }
 
+    storyContent += `<p class="scene-text">${currentScene.text}</p>`;
     storyBox.innerHTML = storyContent;
 
-    optionsBox.innerHTML = "";
+    optionsBox.innerHTML = '';
 
-    const currentScene = story[storyIndex];
-    currentScene.options.forEach((option, index) => {
+    currentScene.options.forEach(option => {
         const button = document.createElement('button');
         button.textContent = option;
         button.addEventListener('click', () => {
-            if (option === "Stick with old friends") {
-                // Navigate to the scene where Lars sticks with his old friends
-                storyIndex = 3;
-            } else {
-                storyIndex++;
-            }
-            displayStory();
+            handleOption(option);
         });
         optionsBox.appendChild(button);
     });
+}
+
+function handleOption(option) {
+    if (option === 'Make new friends') {
+        storyIndex = 2; // Skip the decision scene and go directly to making new friends
+    } else if (option === 'Stick with old friends') {
+        storyIndex = 3; // Skip the decision scene and go directly to sticking with old friends
+    } else if (option === 'Join the group and try the joints' || option === 'Decline the offer and find another activity') {
+        storyIndex = 4; // Skip the scene related to Lars's new friends
+    } else {
+        storyIndex++;
+    }
+
+    displayStory();
 }
 
 displayStory();
