@@ -21,16 +21,17 @@ const story = [
     // StoryIndex 8
     { text: "Lars declines the offer to try the joints, feeling uncomfortable with the idea of experimenting with drugs. He suggests doing something else instead, like grabbing a snack or exploring the city. The faces of the new faces drop and look disappointed.", image: "image8.jpg", options: ["Continue"] },
     // StoryIndex 9
-    { text: "After trying the joints, Lars finds himself enjoying the sensation and decides to continue experimenting with drugs. He becomes more involved with his new friends and their drug-related activities.", image: "image9.jpg", options: ["Continue"] },
+    { text: "After trying the joints, Lars finds himself enjoying the sensation and decides to continue experimenting with drugs. He becomes more involved with his new friends and their drug-related activities.", image: "images/lars-smoke.png", options: ["Continue"] },
     // StoryIndex 10
     { text: "By avoiding drugs, Lars focuses on other activities like sports, music, or academic pursuits. He maintains a distance from the group experimenting with drugs, feeling uneasy about their lifestyle choices.", image: "image10.jpg", options: ["Continue"] },
-     // StoryIndex 11
+    // StoryIndex 11
     { text: "As Lars's drug use escalates, Sara expresses concern for his well-being. She encourages him to seek help and offers her support.", image: "image11.jpg", options: ["Accept Sara's help and try to overcome addiction", "Reject Sara's help and spiral deeper into addiction"] },
-     // StoryIndex 12
-    { text: "Recognizing the impact of his choices, Lars accepts Sara's help and decides to overcome his addiction. He opens up to her about his struggles and together, they embark on a journey towards recovery. If Lars accepts Sara's help, they work together to overcome his addiction. Their bond deepens, and they confess their feelings for each other, realizing their love was mutual all along. Lars embraces a brighter future with Sara by his side.", image: "image12.jpg", options: ["Continue"] },
-     // StoryIndex 13
-    { text: "Feeling defensive and ashamed, Lars rejects Sara's help, believing he can handle his addiction on his own. He distances himself from Sara and sinks deeper into addiction, isolating himself from friends and family. If Lars rejects Sara's help, his addiction spirals out of control. Their friendship deteriorates, and Lars's life descends into darkness. Tragedy strikes when Lars's drug use leads to irreversible consequences, leaving Sara devastated.", image: "image13.jpg", options: ["Continue"] }
+    // StoryIndex 12
+    { text: "Recognizing the impact of his choices, Lars accepts Sara's help and decides to overcome his addiction. He opens up to her about his struggles and together, they embark on a journey towards recovery. Their bond deepens, and they confess their feelings for each other, realizing their love was mutual all along. Lars embraces a brighter future with Sara by his side.", image: "image12.jpg", options: ["Continue"] },
+    // StoryIndex 13
+    { text: "Feeling defensive and ashamed, Lars rejects Sara's help, believing he can handle his addiction on his own. He distances himself from Sara and sinks deeper into addiction, isolating himself from friends and family. Their friendship deteriorates, and Lars's life descends into darkness. Tragedy strikes when Lars's drug use leads to irreversible consequences, leaving Sara devastated.", image: "image13.jpg", options: ["Continue"] }
 ];
+
 
 let storyIndex = 0;
 
@@ -75,20 +76,21 @@ function handleOption(option) {
     } else if (storyIndex === 5 && option === "Say yes to trying joints after school") {
         storyIndex = 6;
     } else if (storyIndex === 6 && option === 'Continue experimenting with drugs') {
-        storyIndex = 7;
-    } else if (storyIndex === 6 && option === 'Avoid drugs and focus on other activities') {
-        storyIndex = 8;
-    } else if (storyIndex === 7 && option === 'Continue') {
         storyIndex = 9;
-    } else if (storyIndex === 8 && option === 'Continue') {
+    } else if (storyIndex === 6 && option === 'Avoid drugs and focus on other activities') {
         storyIndex = 10;
-    } else if (storyIndex === 9 && option === "Accept Sara's help and try to overcome addiction") {
+    } else if (storyIndex === 9 && option === 'Continue') {
+        storyIndex = 11;
+    } else if (storyIndex === 10 && option === 'Continue') {
+        storyIndex = 11;
+    } else if (storyIndex === 11 && option === "Accept Sara's help and try to overcome addiction") {
         storyIndex = 12;
-    } else if (storyIndex === 9 && option === "Reject Sara's help and spiral deeper into addiction") {
+    } else if (storyIndex === 11 && option === "Reject Sara's help and spiral deeper into addiction") {
         storyIndex = 13;
     } else {
         storyIndex++;
     }
+
 
     displayStory();
 }
