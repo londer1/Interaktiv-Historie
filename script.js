@@ -25,13 +25,14 @@ const story = [
     // StoryIndex 10
     { text: "By avoiding drugs, Lars focuses on other activities like sports, music, or academic pursuits. He maintains a distance from the group experimenting with drugs, feeling uneasy about their lifestyle choices.", image: "image10.jpg", options: ["Continue"] },
     // StoryIndex 11
-    { text: "As Lars's drug use escalates, Sara expresses concern for his well-being. She encourages him to seek help and offers her support.", image: "image11.jpg", options: ["Accept Sara's help and try to overcome addiction", "Reject Sara's help and spiral deeper into addiction"] },
+    { text: "As Lars's drug use escalates, Sara expresses concern for his well-being. She encourages him to seek help and offers her support.", image: "images/sara-help.png", options: ["Accept Sara's help", "Reject Sara's help"] },
     // StoryIndex 12
     { text: "Recognizing the impact of his choices, Lars accepts Sara's help and decides to overcome his addiction. He opens up to her about his struggles and together, they embark on a journey towards recovery. Their bond deepens, and they confess their feelings for each other, realizing their love was mutual all along. Lars embraces a brighter future with Sara by his side.", image: "image12.jpg", options: ["Continue"] },
     // StoryIndex 13
-    { text: "Feeling defensive and ashamed, Lars rejects Sara's help, believing he can handle his addiction on his own. He distances himself from Sara and sinks deeper into addiction, isolating himself from friends and family. Their friendship deteriorates, and Lars's life descends into darkness. Tragedy strikes when Lars's drug use leads to irreversible consequences, leaving Sara devastated.", image: "image13.jpg", options: ["Continue"] }
+    { text: "Feeling defensive and ashamed, Lars rejects Sara's help, believing he can handle his addiction on his own. He distances himself from Sara and sinks deeper into addiction, isolating himself from friends and family. Their friendship deteriorates, and Lars's life descends into darkness. Tragedy strikes when Lars's drug use leads to irreversible consequences, leaving Sara devastated.", image: "image13.jpg", options: ["Continue"] },
+    // StoryIndex 14
+    { text: "The End", image: "", options: [] }
 ];
-
 
 let storyIndex = 0;
 
@@ -65,7 +66,9 @@ function displayStory() {
 }
 
 function handleOption(option) {
-    if (storyIndex === 1 && option === 'Make new friends') {
+    if (storyIndex === 0 && option === 'Continue') {
+        storyIndex = 1;
+    } else if (storyIndex === 1 && option === 'Make new friends') {
         storyIndex = 2;
     } else if (storyIndex === 2 && option === 'Continue') {
         storyIndex = 4;
@@ -83,16 +86,19 @@ function handleOption(option) {
         storyIndex = 11;
     } else if (storyIndex === 10 && option === 'Continue') {
         storyIndex = 11;
-    } else if (storyIndex === 11 && option === "Accept Sara's help and try to overcome addiction") {
+    } else if (storyIndex === 11 && option === "Accept Sara's help") {
         storyIndex = 12;
-    } else if (storyIndex === 11 && option === "Reject Sara's help and spiral deeper into addiction") {
+    } else if (storyIndex === 11 && option === "Reject Sara's help") {
         storyIndex = 13;
-    } else {
-        storyIndex++;
+    } else if (storyIndex === 12 && option === 'Continue') {
+        storyIndex = 14; // End of the story
+    } else if (storyIndex === 13 && option === 'Continue') {
+        storyIndex = 14; // End of the story
     }
-
 
     displayStory();
 }
 
+
+// Call displayStory() after setting the initial storyIndex
 displayStory();
