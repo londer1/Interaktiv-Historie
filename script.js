@@ -31,7 +31,7 @@ const story = [
     // StoryIndex 13
     { text: "Feeling defensive and ashamed, Lars rejects Sara's help, believing he can handle his addiction on his own. He distances himself from Sara and sinks deeper into addiction, isolating himself from friends and family. Their friendship deteriorates, and Lars's life descends into darkness. Tragedy strikes when Lars's drug use leads to irreversible consequences, leaving Sara devastated.", image: "image13.jpg", options: ["Continue"] },
     // StoryIndex 14
-    { text: "The End", image: "", options: [] },
+    { text: "The End", image: "", options: ["Restart"] },
     // SceneIndex 15
     { text: "Lars firmly declines the offer to try the joints once again, feeling uneasy about experimenting with drugs. He suggests doing something else instead, hoping to steer the conversation in a different direction. The disappointment on his new friends' faces is palpable.", image: "images/lars-decline.png", options: ["Continue"] },
     // SceneIndex 16
@@ -57,11 +57,11 @@ const story = [
     // SceneIndex 26
     { text: "Lars finds a mag in a drawer. Lars has become a little mentally ill, so he gets the thought, should he wait for the man and shoot or just shoot himself?", image: "images/lars-home.png", options: ["Obviously shoot the man", "Shoot yourself (kys)"] },
     // SceneIndex 27
-    { text: "Lars chooses to shot himself (he fucking dies so yeah, story over)", image: "images/lars-home.png", options: [ ] },
+    { text: "Lars chooses to shot himself (he fucking dies so yeah, story over)", image: "images/lars-home.png", options: ["Continue"] },
     // SceneIndex 28
     { text: "Lars gets ready, and when the man comes out, Lars points the gun against him. The man tries to de-escalate the situation but Lars dont believe it and shoots him 2 times in the head.", image: "images/lars-home.png", options: ["Continue"] },
     // SceneIndex 29
-    { text: "Lars later finds out that the man was his dad, and that he was doing a grand reveal, so Lars shoots himself.", image: "images/lars-home.png", options: [] },
+    { text: "Lars later finds out that the man was his dad, and that he was doing a grand reveal, so Lars shoots himself.", image: "images/lars-home.png", options: ["Continue"] },
 
 ];
 
@@ -157,6 +157,20 @@ function handleOption(option) {
         storyIndex = 27;
     } else if (storyIndex === 28 && option === 'Continue') {
         storyIndex = 29;
+    } else if (storyIndex === 27 && option === 'Continue') {
+        storyIndex = 14;
+    } else if (storyIndex === 29 && option === 'Continue') {
+        storyIndex = 14;
+    } else if (storyIndex === 20 && option === 'Continue') {
+        storyIndex = 14;
+    } else if (storyIndex === 25 && option === 'Continue') {
+        storyIndex = 14;
+
+
+    } else if (storyIndex === 14 && option === 'Restart') {
+        storyIndex = 0;
+    
+
 
 
 
