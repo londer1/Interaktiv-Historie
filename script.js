@@ -39,7 +39,7 @@ const story = [
     // SceneIndex 17
     { text: "In the dimly lit foyer of his home, Lars froze as a towering figure emerged from the shadows. Before he could react, the stranger seized him with frightening strength. Despite his desperate struggles, Lars was overpowered, his cries drowned out by the rush of adrenaline. In that moment, his sanctuary became a nightmare, the darkness swallowing him whole. The man takes him in a van and drives away. The man takes him in a dark basement tied down on a chair.", image: "images/lars-abducted.png", options: ["Continue"] },
     // SceneIndex 18
-    { text: "The man goes to the toilet, Lars is stuck, Lars sees a loaded Glock pistol aside from him. Should he take the chance and try to get loose to get the gun, or not?", image: "images/lars-tied.png", options: ["Gun", "Rope", "Wait"] },
+    { text: "The man goes to the toilet, Lars is stuck, Lars sees a Glock pistol aside from him. Should he take the chance and try to get loose to get the gun, or not?", image: "images/lars-tied.png", options: ["Gun", "Rope", "Wait"] },
     // SceneIndex 19
     { text: "The man comes out and its a grad reveal that it is his dad.", image: "images/lars-home.png", options: ["Continue"] },
     // SceneIndex 20
@@ -61,7 +61,7 @@ const story = [
     // SceneIndex 28
     { text: "Lars gets ready, and when the man comes out, Lars points the gun against him. The man tries to de-escalate the situation but Lars dont believe it and shoots him 2 times in the head.", image: "images/lars-home.png", options: ["Continue"] },
     // SceneIndex 29
-    { text: "Lars later finds out that the man was his dad, and that he was doing a grand reveal so he shoots himself.", image: "images/lars-home.png", options: [] },
+    { text: "Lars later finds out that the man was his dad, and that he was doing a grand reveal, so Lars shoots himself.", image: "images/lars-home.png", options: [] },
 
 ];
 
@@ -153,8 +153,8 @@ function handleOption(option) {
         storyIndex = 25; // Slutt
     } else if (storyIndex === 26 && option === 'Obviously shoot the man') {
         storyIndex = 28;
-    } else if (storyIndex === 26 && option === 'Obviously shoot the man') {
-        storyIndex = 28;
+    } else if (storyIndex === 26 && option === 'Shoot yourself (kys)') {
+        storyIndex = 27;
     } else if (storyIndex === 28 && option === 'Continue') {
         storyIndex = 29;
 
