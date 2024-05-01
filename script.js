@@ -31,7 +31,25 @@ const story = [
     // StoryIndex 13
     { text: "Feeling defensive and ashamed, Lars rejects Sara's help, believing he can handle his addiction on his own. He distances himself from Sara and sinks deeper into addiction, isolating himself from friends and family. Their friendship deteriorates, and Lars's life descends into darkness. Tragedy strikes when Lars's drug use leads to irreversible consequences, leaving Sara devastated.", image: "image13.jpg", options: ["Continue"] },
     // StoryIndex 14
-    { text: "The End", image: "", options: [] }
+    { text: "The End", image: "", options: [] },
+    // SceneIndex 15
+    { text: "Lars firmly declines the offer to try the joints once again, feeling uneasy about experimenting with drugs. He suggests doing something else instead, hoping to steer the conversation in a different direction. The disappointment on his new friends' faces is palpable.", image: "images/lars-decline.png", options: ["Continue"] },
+    // SceneIndex 16
+    { text: "Lars comes home, and sees a 52-year-old, 6-foot-2 tall man. He approaches Lars and grabs him.", image: "images/lars-home.png", options: ["Continue"] },
+    // SceneIndex 17
+    { text: "In the dimly lit foyer of his home, Lars froze as a towering figure emerged from the shadows. Before he could react, the stranger seized him with frightening strength. Despite his desperate struggles, Lars was overpowered, his cries drowned out by the rush of adrenaline. In that moment, his sanctuary became a nightmare, the darkness swallowing him whole. The man takes him in a van and drives away. The man takes him in a dark basement tied down on a chair.", image: "images/lars-abducted.png", options: ["Continue"] },
+    // SceneIndex 18
+    { text: "The man goes to the toilet, Lars is stuck, Lars sees a loaded Glock pistol aside from him. Should he take the chance and try to get loose to get the gun, or not?", image: "images/lars-tied.png", options: ["Gun", "Rope", "Wait"] },
+    // SceneIndex 19
+    { text: "The man comes out and its a grad reveal that it is his dad.", image: "images/lars-home.png", options: ["Continue"] },
+    // SceneIndex 20
+    { text: "Lars and his dad lives happily ever after and Sara and Lars become a couple.", image: "images/lars-home.png", options: ["Continue"] },
+    // SceneIndex 21
+    { text: "Lars gets the ropes lose, and ties them down so he can easily get lose later.", image: "images/lars-home.png", options: ["Continue"] },
+    // SceneIndex 22
+    { text: "Lars knows a little bit about guns, so he quickly checks if it is loaded. Lars finds out that the gun is empty and have no bullets.", image: "images/lars-home.png", options: ["Continue"] },
+    // SceneIndex 23
+    { text: "Should he look for bullets, take the risk to leave, or go back and wait?", image: "images/lars-home.png", options: ["Look for bullets", "Try to escape using the door", "Go back and wait"] },
 ];
 
 let storyIndex = 0;
@@ -93,7 +111,32 @@ function handleOption(option) {
     } else if (storyIndex === 9 && option === 'Continue') {
         storyIndex = 11;
     } else if (storyIndex === 10 && option === 'Continue') {
-        storyIndex = 11;
+        storyIndex = 15;
+    } else if (storyIndex === 15 && option === 'Continue') {
+        storyIndex = 16;
+    } else if (storyIndex === 16 && option === 'Continue') {
+        storyIndex = 17;
+    } else if (storyIndex === 17 && option === 'Continue') {
+        storyIndex = 18;
+    } else if (storyIndex === 18 && option === 'Wait') {
+        storyIndex = 19;
+    } else if (storyIndex === 18 && option === 'Rope') {
+        storyIndex = 21;
+    } else if (storyIndex === 18 && option === 'Gun') {
+        storyIndex = 22;
+    } else if (storyIndex === 19 && option === 'Continue') {
+        storyIndex = 20;
+    } else if (storyIndex === 21 && option === 'Continue') {
+        storyIndex = 19;
+    } else if (storyIndex === 22 && option === 'Continue') {
+        storyIndex = 23;
+    } else if (storyIndex === 23 && option === 'Look for bullets') {
+        storyIndex = 24;
+    } else if (storyIndex === 23 && option === 'Try to escape using the door') {
+        storyIndex = 24;
+    } else if (storyIndex === 23 && option === 'Go back and wait') {
+        storyIndex = 24;
+
     } else if (storyIndex === 11 && option === "Accept Sara's help") {
         storyIndex = 12;
     } else if (storyIndex === 11 && option === "Reject Sara's help") {
