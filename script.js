@@ -50,6 +50,19 @@ const story = [
     { text: "Lars knows a little bit about guns, so he quickly checks if it is loaded. Lars finds out that the gun is empty and have no bullets.", image: "images/lars-home.png", options: ["Continue"] },
     // SceneIndex 23
     { text: "Should he look for bullets, take the risk to leave, or go back and wait?", image: "images/lars-home.png", options: ["Look for bullets", "Try to escape using the door", "Go back and wait"] },
+    // SceneIndex 24
+    { text: "Lars takes the risk and runs out the door. The man comes out of the toilet and screams “Stop!” Lars runs anywas, he does not take that risk.", image: "images/lars-home.png", options: ["Continue"] },
+    // SceneIndex 25
+    { text: "Lars moves away and never gets to see his father again and will most likely never know that was his father trying to do a grand reveal that it is his father.", image: "images/lars-home.png", options: ["Continue"] },
+    // SceneIndex 26
+    { text: "Lars finds a mag in a drawer. Lars has become a little mentally ill, so he gets the thought, should he wait for the man and shoot or just shoot himself?", image: "images/lars-home.png", options: ["Obviously shoot the man", "Shoot yourself (kys)"] },
+    // SceneIndex 27
+    { text: "Lars chooses to shot himself (he fucking dies so yeah, story over)", image: "images/lars-home.png", options: [ ] },
+    // SceneIndex 28
+    { text: "Lars gets ready, and when the man comes out, Lars points the gun against him. The man tries to de-escalate the situation but Lars dont believe it and shoots him 2 times in the head.", image: "images/lars-home.png", options: ["Continue"] },
+    // SceneIndex 29
+    { text: "Lars later finds out that the man was his dad, and that he was doing a grand reveal so he shoots himself.", image: "images/lars-home.png", options: [] },
+
 ];
 
 let storyIndex = 0;
@@ -131,11 +144,22 @@ function handleOption(option) {
     } else if (storyIndex === 22 && option === 'Continue') {
         storyIndex = 23;
     } else if (storyIndex === 23 && option === 'Look for bullets') {
-        storyIndex = 24;
+        storyIndex = 26;
     } else if (storyIndex === 23 && option === 'Try to escape using the door') {
         storyIndex = 24;
     } else if (storyIndex === 23 && option === 'Go back and wait') {
-        storyIndex = 24;
+        storyIndex = 19; // Slutt
+    } else if (storyIndex === 24 && option === 'Continue') {
+        storyIndex = 25; // Slutt
+    } else if (storyIndex === 26 && option === 'Obviously shoot the man') {
+        storyIndex = 28;
+    } else if (storyIndex === 26 && option === 'Obviously shoot the man') {
+        storyIndex = 28;
+    } else if (storyIndex === 28 && option === 'Continue') {
+        storyIndex = 29;
+
+
+
 
     } else if (storyIndex === 11 && option === "Accept Sara's help") {
         storyIndex = 12;
