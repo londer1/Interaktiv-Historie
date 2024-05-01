@@ -79,6 +79,12 @@ function handleOption(option) {
     } else if (storyIndex === 1 && option === 'Stick with old friends') {
         storyIndex = 3;
     } else if (storyIndex === 5 && option === "Say yes to trying joints after school") {
+        storyIndex = 7;
+    } else if (storyIndex === 7 && option === 'Continue') {
+        storyIndex = 6;
+    } else if (storyIndex === 5 && option === "Try to say no in a polite way") {
+        storyIndex = 8;
+    } else if (storyIndex === 8 && option === 'Continue') {
         storyIndex = 6;
     } else if (storyIndex === 6 && option === 'Continue experimenting with drugs') {
         storyIndex = 9;
