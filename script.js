@@ -72,6 +72,8 @@ function handleOption(option) {
         storyIndex = 2;
     } else if (storyIndex === 2 && option === 'Continue') {
         storyIndex = 4;
+    } else if (storyIndex === 3 && option === 'Continue') {
+        storyIndex = 4;
     } else if (storyIndex === 4 && option === 'Continue') {
         storyIndex = 5;
     } else if (storyIndex === 1 && option === 'Stick with old friends') {
