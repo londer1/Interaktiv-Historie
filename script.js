@@ -15,7 +15,7 @@ const story = [
     // StoryIndex 5
     { text: "Peer Pressure\nLars's new friends suggest trying out some joints after school, eager to include him in their activities. Lars feels torn between the desire to fit in and the instinct to stay true to himself. As he hesitates, he notices the expectant looks on his friends' faces, feeling the weight of their expectations pressing down on him.", image: "images/lars-sara-newfriends.png", options: ["Say yes to trying joints after school", "Try to say no in a polite way"] },
     // StoryIndex 6
-    { text: "The school day is almost done, and Lars's new friends come up again and ask, 'So you come after school?'", image: "", options: ["Continue experimenting with drugs", "Avoid drugs and focus on other activities"] },
+    { text: "The school day is almost done, and Lars's new friends come up again and ask, 'So you come after school?'", image: "images/lars-do-you-come.png", options: ["Continue experimenting with drugs", "Avoid drugs and focus on other activities"] },
     // StoryIndex 7
     { text: "Feeling a mix of curiosity and peer pressure, Lars decides to join the group and try the joints. He rationalizes it as a one-time thing, eager to fit in with his new friends.", image: "image7.jpg", options: ["Continue"] },
     // StoryIndex 8
