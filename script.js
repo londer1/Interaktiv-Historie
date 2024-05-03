@@ -39,13 +39,13 @@ const story = [
     // SceneIndex 17
     { text: "In the dimly lit foyer of his home, Lars freezes as a towering figure emerges from the shadows. Before he can react, the stranger seizes him with frightening strength. Despite his desperate struggles, Lars is overpowered, his cries drowned out by the rush of adrenaline. In that moment, his sanctuary becomes a nightmare, the darkness swallowing him whole. The man takes him in a van and drives away. The man takes him in a dark basement tied down on a chair.", image: "images/lars-abducted.png", options: ["Continue"] },
     // SceneIndex 18
-    { text: "The man goes to the toilet, Lars is stuck, Lars sees a Glock pistol aside from him. Should he take the chance and try to get loose to get the gun, or not?", image: "images/lars-tied.png", options: ["Gun", "Rope", "Wait"] },
+    { text: "The man goes to the toilet, Lars is stuck, Lars sees a Glock pistol aside from him. Should he take the chance and try to get loose to get the gun, or not?", image: "images/lars-gun-table.png", options: ["Gun", "Rope", "Wait"] },
     // SceneIndex 19
     { text: "The man comes out, revealing himself as Lars's dad.", image: "images/lars-home.png", options: ["Continue"] },
     // SceneIndex 20
     { text: "Lars and his dad live happily ever after, and Sara and Lars become a couple.", image: "images/lars-home.png", options: ["Continue"] },
     // SceneIndex 21
-    { text: "Lars gets the ropes loose and ties them down so he can easily get loose later.", image: "images/lars-home.png", options: ["Continue"] },
+    { text: "Lars gets the ropes loose and ties them down so he can easily get loose later.", image: "images/lars-tied.png", options: ["Continue"] },
     // SceneIndex 22
     { text: "Lars knows a little about guns, so he quickly checks if it is loaded. Lars finds out that the gun is empty and has no bullets.", image: "images/lars-home.png", options: ["Continue"] },
     // SceneIndex 23
