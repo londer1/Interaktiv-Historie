@@ -31,7 +31,7 @@ const story = [
     // StoryIndex 13
     { text: "Faced with vulnerability and pride, Lars rebuffs Sara's offer, convinced he can tackle his demons alone. Drifting further into isolation, he grapples with addiction's relentless grip, his life veering towards darkness as he shuns the support of friends and loved ones. In his solitary descent, Lars faces irreversible consequences, his choices exacting a toll too heavy to bear.", image: "image13.jpg", options: ["Continue"] },
     // StoryIndex 14
-    { text: "The End", image: "", options: ["Restart"] },
+    { text: "The End", image: "the_end.png", options: ["Restart"] },
     // SceneIndex 15
     { text: "Lars firmly declines the offer to try the joints once again, feeling uneasy about experimenting with drugs. He suggests doing something else instead, hoping to steer the conversation in a different direction. The disappointment on his new friends' faces is evident.", image: "images/lars-decline.png", options: ["Continue"] },
     // SceneIndex 16
@@ -41,9 +41,9 @@ const story = [
     // SceneIndex 18
     { text: "The man goes to the toilet, Lars is stuck, Lars sees a Glock pistol aside from him. Should he take the chance and try to get loose to get the gun, or not?", image: "images/lars-gun-table.png", options: ["Gun", "Rope", "Wait"] },
     // SceneIndex 19
-    { text: "The man comes out, revealing himself as Lars's dad.", image: "images/lars-home.png", options: ["Continue"] },
+    { text: "The man comes out, revealing himself as Lars's dad.", image: "images/dad-reveal.png", options: ["Continue"] },
     // SceneIndex 20
-    { text: "Lars and his dad live happily ever after, and Sara and Lars become a couple.", image: "images/lars-home.png", options: ["Continue"] },
+    { text: "Lars and his dad live happily ever after, and Sara and Lars become a couple.", image: "images/lars-sara-dad.png", options: ["Continue"] },
     // SceneIndex 21
     { text: "Lars gets the ropes loose and ties them down so he can easily get loose later.", image: "images/lars-tied.png", options: ["Continue"] },
     // SceneIndex 22
