@@ -1,6 +1,7 @@
 const storyBox = document.getElementById('story-box');
 const optionsBox = document.getElementById('options');
 
+
 const story = [
     // StoryIndex 0
     { text: "You're guiding Lars through a pivotal day in his life.", image: "", options: ["Continue"] },
@@ -17,7 +18,7 @@ const story = [
     // StoryIndex 6
     { text: "As the school day ends, Lars's friends bring up the topic again. 'Are you joining us after school?' they ask eagerly.", image: "images/lars-do-you-come.png", options: ["Continue experimenting", "Suggest an alternative activity"] },
     // StoryIndex 7
-    { text: "Torn between curiosity and apprehension, Lars yields to peer pressure, joining his friends in trying the joints. Rationalizing it as a fleeting experience, he ventures into unfamiliar territory, feeling uncertain.", image: "image7.jpg", options: ["Continue"] },
+    { text: "Torn between curiosity and apprehension, Lars yields to peer pressure, joining his friends in trying the joints. Rationalizing it as a fleeting experience, he ventures into unfamiliar territory, feeling uncertain.", options: ["Continue"] },
     // StoryIndex 8
     { text: "Opting for caution, Lars declines the offer, uncomfortable with the idea of drug experimentation. Proposing an alternative activity, he seeks to steer away from risky ventures, though met with disappointment.", image: "images/lars-reject-joints.png", options: ["Continue"] },
     // StoryIndex 9
@@ -31,7 +32,7 @@ const story = [
     // StoryIndex 13
     { text: "Faced with vulnerability and pride, Lars rebuffs Sara's offer, convinced he can tackle his demons alone. Drifting further into isolation, he grapples with addiction's relentless grip, his life veering towards darkness as he shuns the support of friends and loved ones. In his solitary descent, Lars faces irreversible consequences, his choices exacting a toll too heavy to bear.", image: "image13.jpg", options: ["Continue"] },
     // StoryIndex 14
-    { text: "The End", image: "the_end.png", options: ["Restart"] },
+    { text: "The End", image: "images/the_end.png", options: ["Restart"] },
     // SceneIndex 15
     { text: "Lars firmly declines the offer to try the joints once again, feeling uneasy about experimenting with drugs. He suggests doing something else instead, hoping to steer the conversation in a different direction. The disappointment on his new friends' faces is evident.", image: "images/lars-decline.png", options: ["Continue"] },
     // SceneIndex 16
@@ -49,7 +50,7 @@ const story = [
     // SceneIndex 22
     { text: "Lars knows a little about guns, so he quickly checks if it is loaded. Lars finds out that the gun is empty and has no bullets.", image: "images/lars-home.png", options: ["Continue"] },
     // SceneIndex 23
-    { text: "Should he look for bullets, take the risk to leave, or go back and wait?", image: "images/lars-home.png", options: ["Look for bullets", "Try to escape using the door", "Go back and wait"] },
+    { text: "Should he look for bullets, take the risk to leave, or go back and wait?", options: ["Look for bullets", "Try to escape using the door", "Go back and wait"] },
     // SceneIndex 24
     { text: "Lars takes the risk and runs out the door. The man comes out of the toilet and screams 'Stop!' Lars runs anyway, not taking that risk.", image: "images/lars-home.png", options: ["Continue"] },
     // SceneIndex 25
@@ -63,6 +64,7 @@ const story = [
     // SceneIndex 29
     { text: "Lars later finds out that the man was his dad, and that he was trying to do a grand reveal, so Lars shoots himself.", image: "images/lars-home.png", options: ["Continue"] },
 ];
+
 
 
 
