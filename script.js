@@ -35,7 +35,7 @@ const story = [
     // SceneIndex 15
     { text: "Lars firmly declines the offer to try the joints once again, feeling uneasy about experimenting with drugs. He suggests doing something else instead, hoping to steer the conversation in a different direction. The disappointment on his new friends' faces is evident.", image: "images/lars-decline.png", options: ["Continue"] },
     // SceneIndex 16
-    { text: "Lars comes home and sees a 52-year-old, 6-foot-2 tall man. He approaches Lars and grabs him.", image: "images/lars-home.png", options: ["Continue"] },
+    { text: "Lars comes home and sees a 52-year-old, tall, unknown, and scary man. He approaches Lars and grabs him.", image: "images/old-man.png", options: ["Continue"] },
     // SceneIndex 17
     { text: "In the dimly lit foyer of his home, Lars freezes as a towering figure emerges from the shadows. Before he can react, the stranger seizes him with frightening strength. Despite his desperate struggles, Lars is overpowered, his cries drowned out by the rush of adrenaline. In that moment, his sanctuary becomes a nightmare, the darkness swallowing him whole. The man takes him in a van and drives away. The man takes him in a dark basement tied down on a chair.", image: "images/lars-abducted.png", options: ["Continue"] },
     // SceneIndex 18
