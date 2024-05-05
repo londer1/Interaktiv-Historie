@@ -22,7 +22,7 @@ const story = [
     // StoryIndex 8
     { text: "Opting for caution, Lars declines the offer, uncomfortable with the idea of drug experimentation. Proposing an alternative activity, he seeks to steer away from risky ventures, though met with disappointment.", image: "images/lars-reject-joints.png", options: ["Continue"] },
     // StoryIndex 9
-    { text: "Exploring drugs, Lars finds himself enticed by the allure of altered sensations, his initial trepidation giving way to immersion in his friends' lifestyle.", image: "images/lars-smoke.png", options: ["Continue"] },
+    { text: "Exploring drugs, Lars finds himself enticed by the allure of altered sensations, his initial trepidation giving way to immersion in his friends' lifestyle.", image: "images/lars-alley.png", options: ["Continue"] },
     // StoryIndex 10
     { text: "Lars chooses to stay away from drugs and instead focuses on other things. He's careful about who he hangs out with and makes his own choices, being aware of the risks he wants to avoid.", image: "images/lars-reject-joints2.png", options: ["Continue"] },
     // StoryIndex 11
@@ -48,21 +48,21 @@ const story = [
     // SceneIndex 21
     { text: "Lars gets the ropes loose and ties them down so he can easily get loose later.", image: "images/lars-tied.png", options: ["Continue"] },
     // SceneIndex 22
-    { text: "Lars knows a little about guns, so he quickly checks if it is loaded. Lars finds out that the gun is empty and has no bullets.", image: "images/lars-home.png", options: ["Continue"] },
+    { text: "Lars knows a little about guns, so he quickly checks if it is loaded. Lars finds out that the gun is empty and has no bullets.", image: "images/lars-check.png", options: ["Continue"] },
     // SceneIndex 23
     { text: "Should he look for bullets, take the risk to leave, or go back and wait?", options: ["Look for bullets", "Try to escape using the door", "Go back and wait"] },
     // SceneIndex 24
-    { text: "Lars takes the risk and runs out the door. The man comes out of the toilet and screams 'Stop!' Lars runs anyway, not taking that risk.", image: "images/lars-home.png", options: ["Continue"] },
+    { text: "Lars takes the risk and runs out the door. The man comes out of the toilet and screams 'Stop!' Lars runs anyway, not taking that risk.", image: "images/lars-run.png", options: ["Continue"] },
     // SceneIndex 25
-    { text: "Lars moves away and never gets to see his father again and will most likely never know that was his father trying to do a grand reveal.", image: "images/lars-home.png", options: ["Continue"] },
+    { text: "Lars moves away and never gets to see his father again and will most likely never know that was his father trying to do a grand reveal.", image: "images/lars-old.png", options: ["Continue"] },
     // SceneIndex 26
-    { text: "Lars finds a magazine in a drawer. Lars has become a little mentally ill, so he gets the thought, should he wait for the man and shoot or just shoot himself?", image: "images/lars-home.png", options: ["Obviously shoot the man", "Shoot yourself (kys)"] },
+    { text: "Lars finds a magazine in a drawer. Lars has become a little mentally ill, so he gets the thought, should he wait for the man and shoot or just shoot himself?", image: "images/lars-think.png", options: ["Obviously shoot the man", "Shoot yourself (kys)"] },
     // SceneIndex 27
-    { text: "Lars chooses to shoot himself (he dies)", image: "images/lars-home.png", options: ["Continue"] },
+    { text: "Lars chooses to shoot himself (he dies)", image: "images/lars-dead.png", options: ["Continue"] },
     // SceneIndex 28
-    { text: "Lars gets ready, and when the man comes out, Lars points the gun against him. The man tries to de-escalate the situation but Lars doesn't believe it and shoots him twice in the head.", image: "images/lars-home.png", options: ["Continue"] },
+    { text: "Lars gets ready, and when the man comes out, Lars points the gun against him. The man tries to de-escalate the situation but Lars doesn't believe it and shoots him twice in the head.", image: "images/lars-kill.png", options: ["Continue"] },
     // SceneIndex 29
-    { text: "Lars later finds out that the man was his dad, and that he was trying to do a grand reveal, so Lars shoots himself.", image: "images/lars-home.png", options: ["Continue"] },
+    { text: "Lars later finds out that the man was his dad, and that he was trying to do a grand reveal, so Lars shoots himself.", image: "images/lars-suicide.png", options: ["Continue"] },
 ];
 
 
