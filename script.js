@@ -10,7 +10,7 @@ const story = [
     // StoryIndex 2
     { text: "Lars decided to try making new friends. He talked to people during breaks and found a group that liked exploring cities and having adventures.", image: ["images/lars-newfriends.png"], options: ["Continue"] },
     // StoryIndex 3
-    { text: "Lars chose to stay with his old friends, and had fun doing that.", image: "images/lars-friends.png", options: ["Continue"] },
+    { text: "Lars chose to stay with his old friends and had fun doing that.", image: "images/lars-friends.png", options: ["Continue"] },
     // StoryIndex 4
     { text: "Lars met Sara, an old friend from high school, and they talked about the new school year. They both felt excited and wanted to make new connections.", image: "images/lars-sara.png", options: ["Continue"] },
     // StoryIndex 5
@@ -22,13 +22,13 @@ const story = [
     // StoryIndex 8
     { text: "Lars decided not to try the drugs, saying he didn't want to. He suggested doing something else instead, but his new friends were disappointed.", image: "images/lars-reject-joints.png", options: ["Continue"] },
     // StoryIndex 9
-    { text: "Lars tries drugs anyway, even though he is scared. He felt drawn to the new experiences, even though he knows it is risky.", image: "images/lars-alley.png", options: ["Continue"] },
+    { text: "Lars tries drugs anyway, even though he is scared. He felt drawn to the new experiences, even though he knew it was risky.", image: "images/lars-alley.png", options: ["Continue"] },
     // StoryIndex 10
     { text: "Lars decided to stay away from drugs and focus on other things. He was careful about who he hung out with and made his own choices.", image: "images/lars-reject-joints2.png", options: ["Continue"] },
     // StoryIndex 11
-    { text: "Sara was worried about Lars and offered support. She was there for him, and kindly asked if he would take her help to stop using drugs.", image: "images/sara-help.png", options: ["Accept Sara's help", "Decline Sara's help"] },
+    { text: "Sara was worried about Lars and offered support. She was there for him and kindly asked if he would take her help to stop using drugs.", image: "images/sara-help.png", options: ["Accept Sara's help", "Decline Sara's help"] },
     // StoryIndex 12
-    { text: "Lars appreciated Sara's support and decided to work on his drog problems. They talked about the issue and she supported him the whole way.", image: "image12.jpg", options: ["Continue"] },
+    { text: "Lars appreciated Sara's support and decided to work on his drug problems. They talked about the issue and she supported him the whole way.", image: "image12.jpg", options: ["Continue"] },
     // StoryIndex 13
     { text: "Lars rejected Sara's help, thinking he could handle his problems alone. He became more isolated and struggled with addiction.", image: "image13.jpg", options: ["Continue"] },
     // StoryIndex 14
