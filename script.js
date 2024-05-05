@@ -6,45 +6,45 @@ const story = [
     // StoryIndex 0
     { text: "You're guiding Lars through a pivotal day in his life.", image: "", options: ["Continue"] },
     // StoryIndex 1
-    { text: "Lars woke up, feeling nervous and excited for the first day of school. He stood before the mirror, wondering whether to make new friends or stick with the old ones.", image: ["images/lars-bed.png", "images/lars-mirror.png"], options: ["Make new friends", "Stick with old friends"] },
+    { text: "Lars woke up, feeling both nervous and excited for his first day of school. He stood in front of the mirror, thinking about whether to make new friends or keep the old ones.", image: ["images/lars-bed.png", "images/lars-mirror.png"], options: ["Make new friends", "Stick with old friends"] },
     // StoryIndex 2
-    { text: "Opting for a change, Lars sets out to make new connections. Engaging in conversations during breaks, he finds himself drawn to a group intrigued by urban exploration and adventure.", image: ["images/lars-newfriends.png"], options: ["Continue"] },
+    { text: "Lars decided to try making new friends. He talked to people during breaks and found a group that liked exploring cities and having adventures.", image: ["images/lars-newfriends.png"], options: ["Continue"] },
     // StoryIndex 3
-    { text: "Preferring the comfort of familiarity, Lars chooses to stay with his existing friends. They spend the day reminiscing about past experiences, yet Lars senses something left unexplored.", image: "images/lars-friends.png", options: ["Continue"] },
+    { text: "Lars chose to stay with his old friends, and had fun doing that.", image: "images/lars-friends.png", options: ["Continue"] },
     // StoryIndex 4
-    { text: "Regardless of Lars's choice, he reunites with Sara, a friend from high school. Their encounter is filled with excitement for the new school year, fostering connections old and new.", image: "images/lars-sara.png", options: ["Continue"] },
+    { text: "Lars met Sara, an old friend from high school, and they talked about the new school year. They both felt excited and wanted to make new connections.", image: "images/lars-sara.png", options: ["Continue"] },
     // StoryIndex 5
-    { text: "Lars's newfound friends suggest trying joints after school, eager to include him. Lars feels torn between the desire to belong and a growing unease, wrestling with conflicting impulses.", image: "images/lars-sara-newfriends.png", options: ["Consider trying joints", "Politely decline"] },
+    { text: "Lars's new friends asked him to join them after school to try some drugs. Lars felt torn between wanting to fit in and being scared of the drugs.", image: "images/lars-sara-newfriends.png", options: ["Consider trying joints", "Politely decline"] },
     // StoryIndex 6
     { text: "As the school day ends, Lars's friends bring up the topic again. 'Are you joining us after school?' they ask eagerly.", image: "images/lars-do-you-come.png", options: ["Continue experimenting", "Suggest an alternative activity"] },
     // StoryIndex 7
-    { text: "Torn between curiosity and apprehension, Lars yields to peer pressure, joining his friends in trying the joints. Rationalizing it as a fleeting experience, he ventures into unfamiliar territory, feeling uncertain.", options: ["Continue"] },
+    { text: "Lars was scared but decided to go with his friends to try the drugs. He thought it would be a one-time thing, but he felt unsure.", options: ["Continue"] },
     // StoryIndex 8
-    { text: "Opting for caution, Lars declines the offer, uncomfortable with the idea of drug experimentation. Proposing an alternative activity, he seeks to steer away from risky ventures, though met with disappointment.", image: "images/lars-reject-joints.png", options: ["Continue"] },
+    { text: "Lars decided not to try the drugs, saying he didn't want to. He suggested doing something else instead, but his new friends were disappointed.", image: "images/lars-reject-joints.png", options: ["Continue"] },
     // StoryIndex 9
-    { text: "Exploring drugs, Lars finds himself enticed by the allure of altered sensations, his initial trepidation giving way to immersion in his friends' lifestyle.", image: "images/lars-alley.png", options: ["Continue"] },
+    { text: "Lars tries drugs anyway, even though he is scared. He felt drawn to the new experiences, even though he knows it is risky.", image: "images/lars-alley.png", options: ["Continue"] },
     // StoryIndex 10
-    { text: "Lars chooses to stay away from drugs and instead focuses on other things. He's careful about who he hangs out with and makes his own choices, being aware of the risks he wants to avoid.", image: "images/lars-reject-joints2.png", options: ["Continue"] },
+    { text: "Lars decided to stay away from drugs and focus on other things. He was careful about who he hung out with and made his own choices.", image: "images/lars-reject-joints2.png", options: ["Continue"] },
     // StoryIndex 11
-    { text: "Amidst concerns, Sara extends a supportive hand to Lars, expressing worry for his well-being. Offering solace and encouragement, she stands by his side, a beacon of hope in challenging times.", image: "images/sara-help.png", options: ["Accept Sara's help", "Decline Sara's help"] },
+    { text: "Sara was worried about Lars and offered support. She was there for him, and kindly asked if he would take her help to stop using drugs.", image: "images/sara-help.png", options: ["Accept Sara's help", "Decline Sara's help"] },
     // StoryIndex 12
-    { text: "Recognizing the gravity of his situation, Lars embraces Sara's support, embarking on a journey towards recovery. Opening up about his struggles, he finds solace in their shared resolve, their bond deepening as they navigate the challenges together. In Sara's steadfast presence, Lars glimpses a brighter future, one infused with hope and renewed purpose.", image: "image12.jpg", options: ["Continue"] },
+    { text: "Lars appreciated Sara's support and decided to work on his drog problems. They talked about the issue and she supported him the whole way.", image: "image12.jpg", options: ["Continue"] },
     // StoryIndex 13
-    { text: "Faced with vulnerability and pride, Lars rebuffs Sara's offer, convinced he can tackle his demons alone. Drifting further into isolation, he grapples with addiction's relentless grip, his life veering towards darkness as he shuns the support of friends and loved ones. In his solitary descent, Lars faces irreversible consequences, his choices exacting a toll too heavy to bear.", image: "image13.jpg", options: ["Continue"] },
+    { text: "Lars rejected Sara's help, thinking he could handle his problems alone. He became more isolated and struggled with addiction.", image: "image13.jpg", options: ["Continue"] },
     // StoryIndex 14
     { text: "The End", image: "images/the_end.png", options: ["Restart"] },
     // SceneIndex 15
-    { text: "Lars firmly declines the offer to try the joints once again, feeling uneasy about experimenting with drugs. He suggests doing something else instead, hoping to steer the conversation in a different direction. The disappointment on his new friends' faces is evident.", image: "images/lars-decline.png", options: ["Continue"] },
+    { text: "Lars refused to try drugs again, saying he didn't want to. His friends were upset, but Lars wanted to do something else.", image: "images/lars-decline.png", options: ["Continue"] },
     // SceneIndex 16
-    { text: "Lars comes home and sees a 52-year-old, tall, unknown, and scary man. He approaches Lars and grabs him.", image: "images/old-man.png", options: ["Continue"] },
+    { text: "Lars went home and saw a strange man. He approaches Lars and grabs him.", image: "images/old-man.png", options: ["Continue"] },
     // SceneIndex 17
-    { text: "In the dimly lit foyer of his home, Lars freezes as a towering figure emerges from the shadows. Before he can react, the stranger seizes him with frightening strength. Despite his desperate struggles, Lars is overpowered, his cries drowned out by the rush of adrenaline. In that moment, his sanctuary becomes a nightmare, the darkness swallowing him whole. The man takes him in a van and drives away. The man takes him in a dark basement tied down on a chair.", image: "images/lars-abducted.png", options: ["Continue"] },
+    { text: "The man grabbed him and took him away in a van. The man tied Lars up in a dark basement.", image: "images/lars-abducted.png", options: ["Continue"] },
     // SceneIndex 18
-    { text: "The man goes to the toilet, Lars is stuck, Lars sees a Glock pistol aside from him. Should he take the chance and try to get loose to get the gun, or not?", image: "images/lars-gun-table.png", options: ["Gun", "Rope", "Wait"] },
+    { text: "The man goes to the toilet, Lars is stuck, but sees a Glock pistol aside from him. Should he take the chance and try to get loose to get the gun, or not?", image: "images/lars-gun-table.png", options: ["Gun", "Rope", "Wait"] },
     // SceneIndex 19
     { text: "The man comes out, revealing himself as Lars's dad.", image: "images/dad-reveal.png", options: ["Continue"] },
     // SceneIndex 20
-    { text: "Lars and his dad live happily ever after, and Sara and Lars become a couple.", image: "images/lars-sara-dad.png", options: ["Continue"] },
+    { text: "The man came back and revealed he was Lars's dad. They lived happily ever after, and Lars and Sara became a couple.", image: "images/lars-sara-dad.png", options: ["Continue"] },
     // SceneIndex 21
     { text: "Lars gets the ropes loose and ties them down so he can easily get loose later.", image: "images/lars-tied.png", options: ["Continue"] },
     // SceneIndex 22
