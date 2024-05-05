@@ -4,7 +4,7 @@ const optionsBox = document.getElementById('options');
 
 const story = [
     // StoryIndex 0
-    { text: "You're guiding Lars through a pivotal day in his life.", image: "", options: ["Continue"] },
+    { text: "You're controlling a guy named Lars through his life and how his life will go.", image: "", options: ["Continue"] },
     // StoryIndex 1
     { text: "Lars woke up, feeling both nervous and excited for his first day of school. He stood in front of the mirror, thinking about whether to make new friends or keep the old ones.", image: ["images/lars-bed.png", "images/lars-mirror.png"], options: ["Make new friends", "Stick with old friends"] },
     // StoryIndex 2
@@ -22,7 +22,7 @@ const story = [
     // StoryIndex 8
     { text: "Lars decided not to try the drugs, saying he didn't want to. He suggested doing something else instead, but his new friends were disappointed.", image: "images/lars-reject-joints.png", options: ["Continue"] },
     // StoryIndex 9
-    { text: "Lars tries drugs anyway, even though he is scared. He felt drawn to the new experiences, even though he knew it was risky.", image: "images/lars-alley.png", options: ["Continue"] },
+    { text: "Lars tries drugs anyway, even though he is scared in a dirty alley with his new friends. He felt drawn to the new experiences, even though he knew it was risky.", image: "images/lars-alley.png", options: ["Continue"] },
     // StoryIndex 10
     { text: "Lars decided to stay away from drugs and focus on other things. He was careful about who he hung out with and made his own choices.", image: "images/lars-reject-joints2.png", options: ["Continue"] },
     // StoryIndex 11
